@@ -11,6 +11,68 @@
   --body:'Inter',Arial,sans-serif;
   --pad:clamp(24px,5vw,88px);
 }
+/* ========================================
+   3D WALKTHROUGH VIDEO
+======================================== */
+
+.walkthrough-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.walkthrough-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+
+/* Modal Video */
+
+.walkthrough-modal__content {
+  width: min(1200px, 90vw);
+  position: relative;
+}
+
+.walkthrough-modal__video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+}
+
+.walkthrough-modal__video video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+
+/* Make sure text stays above video */
+
+.walkthrough-copy {
+  position: relative;
+  z-index: 3;
+}
+
+.walkthrough-veil {
+  z-index: 2;
+}
+
+.walkthrough-ring {
+  z-index: 3;
+}
+
+
+
+
+
 *{box-sizing:border-box}
 html{scroll-behavior:auto;background:var(--ink)}
 body{margin:0;font-family:var(--body);background:var(--ink);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased}
