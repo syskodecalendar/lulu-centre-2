@@ -152,15 +152,76 @@
     $$('.reveal,.reveal-card,[data-count]').forEach(el=>io.observe(el));
   }
 
-  // Walkthrough modal / URL placeholder
-  const walkthroughUrl = ''; // add the final 3D walkthrough URL here
-  const modal=$('#walkthroughModal');
-  $('#walkthroughBtn')?.addEventListener('click',()=>{
-    if(walkthroughUrl){window.open(walkthroughUrl,'_blank','noopener');return}
-    document.body.classList.add('modal-open');modal?.classList.add('is-open');modal?.setAttribute('aria-hidden','false');lenis?.stop();
-  });
-  const closeModal=()=>{document.body.classList.remove('modal-open');modal?.classList.remove('is-open');modal?.setAttribute('aria-hidden','true');if(!document.body.classList.contains('menu-open'))lenis?.start()};
-  $('#walkthroughClose')?.addEventListener('click',closeModal);
-  modal?.addEventListener('click',e=>{if(e.target===modal)closeModal()});
-  addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal();setMenu(false)}});
+// Walkthrough fullscreen video
+const walkthroughUrl = '';
+const modal = $('#walkthroughModal');
+const modalVideo = $('#walkthroughModalVideo');
+
+$('#walkthroughBtn')?.addEventListener('click', () => {
+
+  if (walkthroughUrl) {
+    window.open(walkthroughUrl, '_blank', 'noopener');
+    return;
+  }
+
+  document.body.classList.add('modal-open');
+  modal?.classList.add('is-open');
+  modal?.setAttribute('aria-hidden', 'false');
+  lenis?.stop();
+
+  if (!modalVideo) return;
+
+  modalVideo.currentTime = 0;
+  modalVideo.muted = false;
+  modalVideo.controls = true;
+
+  modalVideo.play().catch(() => {});
+
+  // Chrome / Edge / Firefox
+  if (modalVideo.requestFullscreen) {
+    modalVideo.requestFullscreen().catch(() => {});
+  }
+
+  // Safari desktop
+  else if (modalVideo.webkitRequestFullscreen) {
+    modalVideo.webkitRequestFullscreen();
+  }
+
+  // iPhone / iPad Safari
+  else if (modalVideo.webkitEnterFullscreen) {
+    modalVideo.webkitEnterFullscreen();
+  }
+
+});
+
+
+const closeModal = () => {
+
+  if (modalVideo) {
+    modalVideo.pause();
+    modalVideo.currentTime = 0;
+  }
+
+  document.body.classList.remove('modal-open');
+  modal?.classList.remove('is-open');
+  modal?.setAttribute('aria-hidden', 'true');
+
+  if (!document.body.classList.contains('menu-open')) {
+    lenis?.start();
+  }
+};
+
+
+$('#walkthroughClose')?.addEventListener('click', closeModal);
+
+modal?.addEventListener('click', e => {
+  if (e.target === modal) closeModal();
+});
+
+addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closeModal();
+    setMenu(false);
+  }
+});
 })();
