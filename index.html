@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#17130f" />
+  <meta name="description" content="Lulu Centre — Bahrain's Premium Shopping Centre." />
+  <title>Lulu Centre | Bahrain's Premium Shopping Centre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/images/lulu-centre-logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <img src="assets/images/lulu-centre-logo.png" alt="" />
+      <p>BAHRAIN'S PREMIUM SHOPPING CENTRE</p>
+      <div class="preloader__line"><i></i></div>
+    </div>
+  </div>
+
+  <div class="noise" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><i id="pageProgress"></i></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span>EXPLORE</span></div>
+
+  <header class="header" id="header">
+    <a href="#home" class="brand js-scroll" aria-label="Lulu Centre home">
+      <img src="assets/images/lulu-centre-logo.png" alt="Lulu Centre" />
+    </a>
+    <div class="header__right">
+      <span class="header__location">MANAMA · BAHRAIN</span>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuPanel"><span>MENU</span><i></i></button>
+    </div>
+  </header>
+
+  <aside class="side-index" aria-hidden="true">
+    <span id="activeIndex">01</span>
+    <i></i>
+    <span>15</span>
+  </aside>
+
+  <div class="menu" id="menuPanel" aria-hidden="true">
+    <div class="menu__bg"></div>
+    <nav>
+      <a href="#home" class="js-scroll"><small>01</small><span>Home</span></a>
+      <a href="#welcome" class="js-scroll"><small>02</small><span>Welcome</span></a>
+      <a href="#property" class="js-scroll"><small>03</small><span>Property</span></a>
+      <a href="#experience" class="js-scroll"><small>04</small><span>Experience</span></a>
+      <a href="#why" class="js-scroll"><small>05</small><span>Why Lulu</span></a>
+      <a href="#ground" class="js-scroll"><small>06</small><span>Ground Floor</span></a>
+      <a href="#first" class="js-scroll"><small>07</small><span>First Floor</span></a>
+      <a href="#hypermarket" class="js-scroll"><small>08</small><span>Hypermarket</span></a>
+      <a href="#tenant" class="js-scroll"><small>09</small><span>Tenant Mix</span></a>
+      <a href="#food" class="js-scroll"><small>10</small><span>Food & Leisure</span></a>
+      <a href="#facilities" class="js-scroll"><small>11</small><span>Facilities</span></a>
+      <a href="#walkthrough" class="js-scroll"><small>12</small><span>3D Walkthrough</span></a>
+      <a href="#access" class="js-scroll"><small>13</small><span>Access</span></a>
+      <a href="#future" class="js-scroll"><small>14</small><span>Future</span></a>
+      <a href="#contact" class="js-scroll"><small>15</small><span>Contact</span></a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- 01 + 02 CINEMATIC -->
+    <section class="opening-story" id="openingStory">
+      <div class="opening-stage">
+        <article class="opening-hero section-anchor" id="home" data-section="01">
+          <div class="opening-hero__media"><img src="assets/images/hero-interior.webp" alt="Lulu Centre interior entrance" /></div>
+          <div class="opening-hero__veil"></div>
+          <div class="opening-hero__copy">
+            <img src="assets/images/lulu-centre-logo.png" alt="Lulu Centre" class="hero-mark" />
+            <h1><span>Bahrain's Premium</span><br>Shopping Centre</h1>
+          </div>
+          <div class="scroll-hint"><i></i><span>SCROLL TO DISCOVER</span></div>
+        </article>
+
+        <article class="opening-welcome section-anchor" id="welcome" data-section="02">
+          <div class="opening-welcome__media"><img src="assets/images/aerial-sunset.webp" alt="Aerial view of Lulu Centre" /></div>
+          <div class="opening-welcome__veil"></div>
+          <div class="opening-welcome__copy">
+            <div class="eyebrow"><span>02</span> WELCOME</div>
+            <h2 class="title title--light">Welcome to<br><em>Lulu Centre</em></h2>
+            <p class="lead">A modern, family-oriented shopping destination bringing retail, services, food and leisure together under one roof.</p>
+            <p>Across two floors, Lulu Centre pairs a dedicated gold and jewellery destination with everyday anchors — hypermarket, fashion and dining — planned around convenience for the whole family.</p>
+            <div class="welcome-stats">
+              <div><strong>2</strong><span>FLOORS</span></div>
+              <div><strong>57</strong><span>UNITS</span></div>
+              <div><strong>12</strong><span>KIOSKS</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 03 SMOOTH -->
+    <section class="property section-anchor" id="property" data-section="03">
+      <div class="container">
+        <div class="eyebrow reveal"><span>03</span> THE PROPERTY</div>
+        <div class="property__head">
+          <h2 class="title reveal">Property at a <em>Glance</em></h2>
+          <p class="property__intro reveal">A two-floor retail destination designed around scale, accessibility and complementary tenant formats.</p>
+        </div>
+        <div class="property-grid">
+          <article class="metric reveal-card"><small>BUILT-UP AREA</small><strong data-count="20000">0</strong><span>sqm</span></article>
+          <article class="metric reveal-card"><small>TOTAL LEASABLE AREA</small><strong data-count="15000">0</strong><span>sqm</span></article>
+          <article class="metric reveal-card"><small>COMMERCIAL UNITS</small><strong data-count="57">0</strong><span>units</span></article>
+          <article class="metric reveal-card"><small>KIOSKS</small><strong data-count="12">0</strong><span>kiosks</span></article>
+          <article class="metric metric--wide reveal-card"><small>GROUND FLOOR</small><strong>7,300</strong><span>sqm leasable</span></article>
+          <article class="metric metric--wide reveal-card"><small>FIRST FLOOR</small><strong>7,700</strong><span>sqm leasable</span></article>
+          <article class="metric metric--wide reveal-card"><small>PARKING</small><strong>300+</strong><span>car spaces</span></article>
+          <article class="metric metric--wide reveal-card"><small>RETAIL LEVELS</small><strong>2</strong><span>floors, one destination</span></article>
+        </div>
+      </div>
+      <div class="property-orbit property-orbit--1"></div>
+      <div class="property-orbit property-orbit--2"></div>
+    </section>
+
+    <!-- 04 + 05 CINEMATIC -->
+    <section class="experience-story" id="experienceStory">
+      <div class="experience-stage">
+        <article class="experience-panel section-anchor" id="experience" data-section="04">
+          <div class="exp-copy">
+            <div class="eyebrow"><span>04</span> THE EXPERIENCE</div>
+            <h2 class="title title--light">The Lulu Centre<br><em>Experience</em></h2>
+            <p class="lead">Daylit atriums, generous circulation and a diverse retail environment planned for convenient, comfortable family shopping.</p>
+          </div>
+          <div class="exp-cards">
+            <figure class="exp-card exp-card--a"><img src="assets/images/experience-atrium-1.webp" alt="Central atrium"><figcaption>CENTRAL ATRIUM</figcaption></figure>
+            <figure class="exp-card exp-card--b"><img src="assets/images/experience-retail.webp" alt="Retail galleries"><figcaption>RETAIL GALLERIES</figcaption></figure>
+            <figure class="exp-card exp-card--c"><img src="assets/images/experience-gallery.webp" alt="Arrival lobby"><figcaption>ARRIVAL LOBBY</figcaption></figure>
+          </div>
+        </article>
+
+        <article class="why-panel section-anchor" id="why" data-section="05">
+          <div class="why-panel__media"><img src="assets/images/hero-exterior.webp" alt="Lulu Centre exterior"></div>
+          <div class="why-panel__veil"></div>
+          <div class="why-panel__inner">
+            <div class="eyebrow"><span>05</span> THE VALUE PROPOSITION</div>
+            <h2 class="title title--light">Why <em>Lulu Centre</em></h2>
+            <div class="why-grid">
+              <article><small>01</small><h3>Positioning</h3><p>A strong gold & jewellery destination in a strategic commercial environment.</p></article>
+              <article><small>02</small><h3>Scale</h3><p>15,000 sqm leasable across 57 units and 12 kiosks.</p></article>
+              <article><small>03</small><h3>Anchors</h3><p>Hypermarket, discount retail, food court and café.</p></article>
+              <article><small>04</small><h3>Access</h3><p>300+ parking spaces and a bus stop at the entrance.</p></article>
+              <article><small>05</small><h3>Tomorrow</h3><p>Proposed metro station expected within approximately 200 m.</p></article>
+              <article><small>06</small><h3>Families</h3><p>Prayer halls, family facilities and a welcoming environment.</p></article>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 06 + 07 SMOOTH -->
+    <section class="floor-section floor-section--ground section-anchor" id="ground" data-section="06">
+      <div class="floor-media reveal-media"><img src="assets/images/ground-floor.webp" alt="Ground floor jewellery gallery" /></div>
+      <div class="floor-copy">
+        <div class="eyebrow reveal"><span>06</span> GROUND FLOOR · 7,300 SQM LEASABLE</div>
+        <h2 class="title title--light reveal">Gold, Jewellery &<br><em>Everyday Convenience</em></h2>
+        <p class="lead reveal">Planned primarily as a destination for gold, jewellery and accessories, supported by finance and exchange services and a small coffee shop.</p>
+        <ul class="feature-list reveal-list">
+          <li>Gold & Jewellery Shops</li><li>Accessories Shops</li><li>Kiosks</li><li>Finance & Exchange</li><li>Small Coffee Shop</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="floor-section floor-section--first section-anchor" id="first" data-section="07">
+      <div class="floor-media reveal-media"><img src="assets/images/first-floor.webp" alt="First floor retail area" /></div>
+      <div class="floor-copy floor-copy--right">
+        <div class="eyebrow reveal"><span>07</span> FIRST FLOOR · 7,700 SQM LEASABLE</div>
+        <h2 class="title title--light reveal">Retail, Hypermarket,<br><em>Food & Leisure</em></h2>
+        <div class="first-grid reveal-list">
+          <article><strong>Hypermarket</strong><span>Everyday anchor</span></article>
+          <article><strong>Clothing Outlet</strong><span>Fashion & value</span></article>
+          <article><strong>Discount Centre</strong><span>Frequency-driven retail</span></article>
+          <article><strong>Food Court</strong><span>Dining & social space</span></article>
+        </div>
+        <p class="floor-note reveal">Supported by male & female toilets and separate prayer halls for men & women.</p>
+      </div>
+    </section>
+
+    <!-- 08 + 09 + 10 CINEMATIC -->
+    <section class="retail-story" id="retailStory">
+      <div class="retail-stage">
+        <article class="retail-scene retail-scene--hyper section-anchor" id="hypermarket" data-section="08">
+          <div class="retail-scene__media"><img src="assets/images/hypermarket.webp" alt="Hypermarket shopping area" /></div>
+          <div class="retail-scene__shade"></div>
+          <div class="retail-scene__copy retail-scene__copy--right">
+            <div class="eyebrow"><span>08</span> HYPERMARKET</div>
+            <h2 class="title title--light">Hypermarket &<br><em>Everyday Shopping</em></h2>
+            <p class="lead">The hypermarket and discount centre anchor the first floor with needs-based, frequency-driven shopping — the visits that bring customers back week after week.</p>
+            <div class="accent-quote">Regular, repeat footfall that every tenant in the centre benefits from.</div>
+            <div class="mini-stats"><div><strong>2</strong><span>Everyday anchors</span></div><div><strong>7,700</strong><span>sqm first-floor leasable area</span></div></div>
+          </div>
+        </article>
+
+        <article class="retail-scene retail-scene--tenant section-anchor" id="tenant" data-section="09">
+          <div class="retail-scene__media"><img src="assets/images/tenant-mix.webp" alt="Retail and tenant mix" /></div>
+          <div class="retail-scene__shade retail-scene__shade--left"></div>
+          <div class="retail-scene__copy">
+            <div class="eyebrow"><span>09</span> TENANT MIX</div>
+            <h2 class="title title--light">Fashion, Retail &<br><em>Tenant Mix</em></h2>
+            <p class="lead">Jewellery, fashion, value retail, services and dining sit side by side — complementary businesses that extend every visit and keep customers in the centre longer.</p>
+            <div class="mini-stats"><div><strong>57</strong><span>Commercial units</span></div><div><strong>12</strong><span>Kiosks</span></div><div><strong>3</strong><span>Anchor · In-line · Kiosk</span></div></div>
+          </div>
+        </article>
+
+        <article class="retail-scene retail-scene--food section-anchor" id="food" data-section="10">
+          <div class="retail-scene__media"><img src="assets/images/food-leisure.webp" alt="Food and leisure area" /></div>
+          <div class="retail-scene__shade"></div>
+          <div class="retail-scene__copy">
+            <div class="eyebrow"><span>10</span> FOOD & LEISURE</div>
+            <h2 class="title title--light">Food, Family &<br><em>Leisure</em></h2>
+            <p class="lead">A first-floor food court and a ground-floor coffee shop turn shopping trips into time spent together — a place for families to shop, eat and stay a while.</p>
+            <div class="food-pill-row"><span>FOOD COURT</span><span>COFFEE SHOP</span><span>FAMILY FACILITIES</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 11 SMOOTH -->
+    <section class="facilities section-anchor" id="facilities" data-section="11">
+      <div class="container">
+        <div class="eyebrow reveal"><span>11</span> FACILITIES & SERVICES</div>
+        <div class="facilities__head"><h2 class="title reveal">Facilities &<br><em>Customer Convenience</em></h2><p class="reveal">Everything required for a comfortable, secure and family-friendly visit.</p></div>
+        <div class="facility-grid">
+          <article class="facility-card reveal-card"><span>01</span><h3>Male & Female Toilets</h3><p>Separate facilities on the first floor.</p></article>
+          <article class="facility-card reveal-card"><span>02</span><h3>Dedicated Prayer Halls</h3><p>Separate halls for men and women.</p></article>
+          <article class="facility-card reveal-card"><span>03</span><h3>Food Court</h3><p>First-floor dining for the whole family.</p></article>
+          <article class="facility-card reveal-card"><span>04</span><h3>24-Hour Security</h3><p>Round-the-clock on-site presence.</p></article>
+          <article class="facility-card reveal-card"><span>05</span><h3>Professional Cleaning</h3><p>Maintained to a premium standard daily.</p></article>
+          <article class="facility-card reveal-card"><span>06</span><h3>CCTV Monitoring</h3><p>Full coverage across floors and parking.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 CINEMATIC -->
+    <section class="walkthrough-story section-anchor" id="walkthrough" data-section="12">
+      <div class="walkthrough-stage">
+        <div class="walkthrough-media"><img src="assets/images/walkthrough.webp" alt="Lulu Centre entrance walkthrough preview" /></div>
+        <div class="walkthrough-veil"></div>
+        <div class="walkthrough-copy">
+          <div class="eyebrow"><span>12</span> EXPERIENCE THE CENTRE</div>
+          <h2 class="title title--light">Experience Lulu Centre<br><em>in Motion</em></h2>
+          <button class="play-btn" id="walkthroughBtn"><span>WATCH THE 3D WALKTHROUGH</span><i>↗</i></button>
+        </div>
+        <div class="walkthrough-ring" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 13 + 14 + 15 SMOOTH -->
+    <section class="access section-anchor" id="access" data-section="13">
+      <div class="access-media reveal-media"><img src="assets/images/parking-front.webp" alt="Lulu Centre parking and entrance"></div>
+      <div class="access-overlay"></div>
+      <div class="container access__inner">
+        <div class="eyebrow reveal"><span>13</span> ACCESS & ARRIVAL</div>
+        <h2 class="title title--light reveal">Accessibility &<br><em>Parking</em></h2>
+        <div class="access-cards">
+          <article class="reveal-card"><strong>300+</strong><span>Car parking spaces at the door</span></article>
+          <article class="reveal-card"><strong>Connected</strong><span>Public bus stop directly in front of the mall</span></article>
+          <article class="reveal-card"><strong>Convenient</strong><span>Convenient vehicle access and customer arrival</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="future section-anchor" id="future" data-section="14">
+      <div class="future__image reveal-media"><img src="assets/images/future-connectivity.webp" alt="Lulu Centre future connectivity"></div>
+      <div class="future__copy">
+        <div class="eyebrow reveal"><span>14</span> FUTURE CONNECTIVITY</div>
+        <h2 class="title reveal">Connected Today.<br><em>Positioned for Tomorrow.</em></h2>
+        <p class="lead reveal">A metro station is proposed within approximately 200 meters of the mall. If realised, it would strengthen accessibility, footfall potential and long-term commercial appeal.</p>
+        <div class="metro-line reveal"><i></i><span>PROPOSED METRO STATION</span><strong>~200 m</strong></div>
+        <small class="future-note reveal">Expected within ~200 m · subject to confirmation</small>
+      </div>
+    </section>
+
+    <footer class="footer section-anchor" id="contact" data-section="15">
+      <div class="footer__media"><img src="assets/images/footer-aerial.webp" alt="Aerial view of Lulu Centre"></div>
+      <div class="footer__veil"></div>
+      <div class="footer__inner">
+        <div class="footer__top reveal">
+          <img src="assets/images/lulu-centre-logo.png" alt="Lulu Centre" class="footer__lulu">
+          <p>Bahrain's Premium Shopping Centre</p>
+        </div>
+        <div class="footer__manager reveal">
+          <span>MANAGED BY</span><img src="assets/images/bluescape-logo.png" alt="Bluescape Properties WLL">
+        </div>
+        <div class="footer__grid">
+          <div class="reveal-card"><small>WEBSITE</small><a href="https://www.lulucentre.com" target="_blank" rel="noopener">www.lulucentre.com</a></div>
+          <div class="reveal-card"><small>EMAIL</small><a href="mailto:easing@lulucentre.com.com">easing@lulucentre.com.com</a></div>
+          <div class="reveal-card"><small>PHONE</small><a href="tel:+97366338850">00973-66338850</a></div>
+          <div class="reveal-card"><small>ADDRESS</small><p>Entrance 20, Ave 336, Road 1405, Block 314, Manama, Kingdom of Bahrain</p></div>
+        </div>
+        <div class="footer__bottom"><span>© LULU CENTRE</span><span>MANAMA · BAHRAIN</span></div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="walkthrough-modal" id="walkthroughModal" aria-hidden="true">
+    <button id="walkthroughClose" aria-label="Close">×</button>
+    <div><small>3D WALKTHROUGH</small><h3>Video link ready to connect.</h3><p>Add the final walkthrough URL in <code>script.js</code> and this button will open it directly.</p></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
