@@ -86,7 +86,7 @@ main{position:relative;z-index:1}
 .progress{position:fixed;left:0;right:0;top:0;height:2px;background:rgba(255,255,255,.08);z-index:1001}.progress i{display:block;height:100%;width:0;background:var(--gold2)}
 
 /* Licensed Jassime webfont can be dropped in here via @font-face. The fallback preserves the intended editorial serif feel. */
-.title,h1,h2{font-family:var(--title);font-weight:400;letter-spacing:-.045em;margin:0;line-height:.9}
+.title,h1,h2{font-family:var(--title);font-weight:400;letter-spacing:-.045em;margin:0;line-height:1.1}
 .title{font-size:clamp(58px,7vw,128px)}
 .title em,h1 em{font-style:italic;color:var(--gold2)}
 .title--light{color:var(--white)}
