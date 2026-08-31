@@ -49,7 +49,7 @@
     rel="stylesheet"
     href="styles.css"
   >
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=BfKKGnSFg-B2ghEjONXfLefV1gsmrENBHXr3DSZvAdGpeNB2qZOTsJRLklq970bYa5QPnmzmY6vbSngrTivqvnvyjD2uoB1anD0lR3ZpNu24c635CJ8hW3v7ghBrmMBN4DIZdF_TO3N1nLbZBeGY2r17aaG3V7KXpdiNOVCcEDNfUy3jhBykIQ4K0GS1ajY34M9qZz_9h7U3aHv1DXFf4sUMnhi1n2Gjji-v1M6zBDpAbl7GqBWkIcjxbb-lUUZpVUHE297VuqDaJrX2KMtahw" charset="UTF-8"></script></head>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=1cvtjANpsZtRBECjGSC3VO4pN1916OGaUaKjJyEZ0RFjhgHnXF3woNbUMCiMfxl0bC2TNfpdqeK0_gecmbdgu220Yko72Hs69tSxuyHv-tX25zd2Pexlwt1DipA1tkmK9svNzsnyddUTlCyWmjZL569E2qflz8cVYcW_2QBMe5rimwlcztlOdvos-sSMa_fjnlvW0VjoRySkqhvCaUQL9fKZzJ3Ua19bEo5-HDz2d5191A9dg_PJs0lkPx_jLKWzgA7aHkWuRWXlxLAyu_5C1v7XKaalAjJ_MfTxH2DAvGX5Hw5oTiFj0hoHh_FX9CB3fToypsu-e0AVOXz86-siOQ" charset="UTF-8"></script><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=BfKKGnSFg-B2ghEjONXfLefV1gsmrENBHXr3DSZvAdGpeNB2qZOTsJRLklq970bYa5QPnmzmY6vbSngrTivqvnvyjD2uoB1anD0lR3ZpNu24c635CJ8hW3v7ghBrmMBN4DIZdF_TO3N1nLbZBeGY2r17aaG3V7KXpdiNOVCcEDNfUy3jhBykIQ4K0GS1ajY34M9qZz_9h7U3aHv1DXFf4sUMnhi1n2Gjji-v1M6zBDpAbl7GqBWkIcjxbb-lUUZpVUHE297VuqDaJrX2KMtahw" charset="UTF-8"></script></head>
 
 
 <body>
@@ -1790,10 +1790,12 @@
           </h2>
 
 
-          <button
+          <a
             class="play-btn"
-            id="walkthroughBtn"
-            type="button"
+            href="assets/lulu_centre%20video.mp4"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Watch the 3D walkthrough in a new tab"
           >
 
             <span>
@@ -1804,7 +1806,7 @@
               ↗
             </i>
 
-          </button>
+          </a>
 
         </div>
 
@@ -2170,72 +2172,7 @@
 
 
 
-  <!-- =========================================================
-       3D WALKTHROUGH MODAL
-  ========================================================== -->
-
-  <div
-    class="walkthrough-modal"
-    id="walkthroughModal"
-    aria-hidden="true"
-  >
-
-
-    <button
-      id="walkthroughClose"
-      type="button"
-      aria-label="Close walkthrough"
-    >
-      ×
-    </button>
-
-
-
-    <div class="walkthrough-modal__content">
-
-
-      <div class="walkthrough-modal__heading">
-
-        <small>
-          3D WALKTHROUGH
-        </small>
-
-        <h3>
-          Experience Lulu Centre
-        </h3>
-
-      </div>
-
-
-
-      <div class="walkthrough-modal__video">
-
-        <video
-          id="walkthroughModalVideo"
-          controls
-          playsinline
-          preload="metadata"
-          poster="assets/images/walkthrough.webp"
-        >
-
-          <source
-            src="assets/lulu_centre video.mp4"
-            type="video/mp4"
-          >
-
-          Your browser does not support HTML5 video.
-
-        </video>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-
-  <!-- =========================================================
+<!-- =========================================================
        FLOATING WHATSAPP CONTACT
   ========================================================== -->
 
